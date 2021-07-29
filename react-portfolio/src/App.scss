@@ -1,0 +1,88 @@
+/* ADD THIS LINE UNDER IN ALL FILES YOU WANT TO REACH VARIABLES AND MIXINS EASY */
+/// <reference path="includes/_mediaqueries.scss" />
+
+/* ==========================================================================
+    Main declaration and builder file. Combines other files and sets global variables.
+
+    The only changes in this file should be to set different variables or add additional @import "xxx.scss" to be included in end result.
+    
+    Use site.scss to write site-specific CSS.
+    Use site_medium.scss/site_mobile.scss to write responsive site-specific CSS.
+    
+    When gulp is run and the sass is compiled, this will be run and the included files will be added to it.
+    The final result end up as css.css (in this folder for dev, in wwwroot/css for prod).
+
+    For css in sub-folders (like union folders), make sure the includes are taken from '../includes/xxx' and not 'includes/xxx'.
+   ========================================================================== */
+
+/*
+ *  Variables to be used when designing
+ *  For new files, get intellisense and recognition by adding this snippet in the top: /// <reference path="css.scss" />
+ */
+
+/* Fonts */
+$font-main: "Open Sans", sans-serif;
+$font-size-main: 2rem;
+$line-height-main: 1.5;
+
+/* Colors text */
+$color-black: #000000;
+$color-white: #ffffff;
+$color-green: #487a7b;
+$color-blue: #051e27;
+// Standard danger/ok colors
+$color-danger: #d9534f;
+$color-ok: #5cb85c;
+
+/* Brand colors */
+$color-main: #000000;
+$color-secondary: #ffffff;
+
+/* Import EZ css library */
+@import "./scss/ez/ez";
+
+/* Default CSS files, mainly with default styles for print, sitemap and Forms */
+@import "./scss/default/mixins"; /* Helping functions for default CSS behaviour */
+@import "./scss/default/helpers"; /* Helping classes that can be used for quick and common behaviour (.bold, .black, etc) */
+@import "./scss/default/animations"; /* Contains animations available that is run on render */
+@import "./scss/default/ew-editor";
+@import "./scss/default/default";
+@import "./scss/default/form";
+@import "./scss/default/cookieinfo";
+@import "./scss/default/typography"; /* Contains the most commonly used Typo-styles*/
+
+/* Components imports, used for all smaller components */
+@import "./scss/components/buttons";
+@import "./scss/components/hero";
+@import "./scss/components/masonry";
+@import "./scss/components/full-info";
+@import "./scss/components/flex-grid";
+@import "./scss/components/media-text";
+@import "./scss/components/animations";
+@import "./scss/components/transaction-columns";
+
+/* Sections imports, used for different sections i.e header, footer  */
+@import "./scss/sections/header";
+@import "./scss/sections/footer";
+
+/*smooth scroll*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Cambria, Georgia, serif !important;
+
+  & h1 {
+    font-weight: 500;
+    font-size: 10rem;
+  }
+
+  & h2 {
+    font-weight: 500;
+  }
+}
+
+section {
+  overflow: hidden;
+}

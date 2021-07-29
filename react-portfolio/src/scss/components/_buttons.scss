@@ -1,0 +1,95 @@
+﻿/* ADD THIS LINE UNDER IN ALL FILES YOU WANT TO REACH VARIABLES AND MIXINS EASY */
+/// <reference path="../css.scss" />
+
+
+
+.btn-standard {
+    background-color: #051e27;
+    color: white;
+    max-width: 450px;
+    padding: 20px;
+    letter-spacing: 3px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, $color-green 50%, #051e27 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 600ms ease-out;
+
+
+    @include lg-phone {
+        font-size: 1.1rem !important;
+        max-width: 100%;
+        margin-top: 30px;
+        
+    }
+
+    &:hover {
+        background-position: left bottom;
+    }
+}
+
+
+
+#wwe-button {
+    margin: 5rem 50rem;
+    padding: 20px 6rem;
+
+    @include lg-phone {
+        margin: 0;
+    }
+}
+
+.btn-standard-wide {
+    padding: 15px;
+    width: 100%;
+    color: white;
+    letter-spacing: 3px;
+    margin-top: 4rem;
+    border: none;
+    cursor: pointer;
+    background-color: $color-blue;
+    color: $color-white;
+    transition: 600ms;
+
+    &:hover {
+        color: $color-green;
+    }
+
+    @include lg-phone {
+        font-size: 1rem;
+    }
+    
+}
+
+
+
+.btn-standard-small {
+    padding: 10px;
+    color: $color-white;
+    background-color: $color-blue;
+    cursor: pointer;
+    letter-spacing: 3px;
+    margin-top: 5rem;
+    border: none;
+    max-width: 200px;
+    width: 100%;
+    transition: 600ms;
+
+    @include lg-phone {
+        max-width: 150px !important;
+        font-size: 1rem;
+    }
+
+    &:hover {
+        color: $color-green;
+    }
+}
+.margin-left-btn {
+    margin-left: 33px;
+}
+
+.otr-buttons {
+    display: flex;
+    justify-content: space-between;
+}

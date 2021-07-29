@@ -1,0 +1,23 @@
+/* ADD THIS LINE UNDER IN ALL FILES YOU WANT TO REACH VARIABLES AND MIXINS EASY */
+/// <reference path="../css.scss" /> 
+/* Helper classes styles */
+
+
+/* Hidden */
+.hidden {display: none !important; visibility: hidden;}
+
+/* Invisible */
+.invisible {visibility: hidden;}
+
+/* Clearfix */
+.clearfix:before, .clearfix:after {content: " "; display: table;}
+.clearfix:after {clear: both;}
+.clearfix {*zoom: 1;}
+
+//Modifiers
+.bold { font-weight: 700; }
+
+.black { color: #000; }
+
+/* Clear */
+.clear {clear: both;}
