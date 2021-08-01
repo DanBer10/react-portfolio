@@ -5,7 +5,8 @@ import Hero from "./Hero";
 import Skills from "./Skills";
 import Contact from "./Contact";
 import Education from "./Education";
-import WorkExp from "./WorkExp";
+import Resume from "./Resume";
+import Projects from "./Projects";
 
 export default function Header() {
   return (
@@ -21,13 +22,13 @@ export default function Header() {
                 <Link to="/skills">Skills</Link>
               </li>
               <li>
-                <Link to="/contact">Projects</Link>
+                <Link to="/projects">Projects</Link>
               </li>
               <li>
                 <Link to="/education">Education</Link>
               </li>
               <li>
-                <Link to="/workExp">Work experience</Link>
+                <Link to="/resume">Resume</Link>
               </li>
               <li>
                 <Link to="/contact">Contact</Link>
@@ -48,8 +49,11 @@ export default function Header() {
           <Route exact path="/education">
             <Education />
           </Route>
-          <Route exact path="/workExp">
-            <WorkExp />
+          <Route exact path="/resume">
+            <Resume />
+          </Route>
+          <Route exact path="/projects">
+            <Projects />
           </Route>
         </Switch>
       </Router>

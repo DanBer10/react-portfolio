@@ -19,6 +19,18 @@ export default function Skills() {
                 <p>SASS</p>
                 <p>CMS</p>
                 <p>JQuery</p>
+                <p>FireBase</p>
+                <p>OOP</p>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-info">
+              <div>
+                <h3>General</h3>
+                <p>Teamplayer</p>
+                <p>Fast learner</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -28,11 +40,9 @@ export default function Skills() {
                 <h3>BackEnd</h3>
                 <p>Java</p>
                 <p>MySQL</p>
-                <p>FireBase</p>
                 <p>Docker</p>
                 <p>Git</p>
-                <p></p>
-                <p></p>
+                <p>OOP</p>
               </div>
             </div>
           </div>

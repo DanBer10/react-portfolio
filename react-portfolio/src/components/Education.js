@@ -4,11 +4,11 @@ export default function Education() {
   return (
     <div className="fullScreen-container">
       <div className="content-standard">
-        <h2 className="title">System Developer Nackademin</h2>
+        <h2 className="title">System engineer Nackademin</h2>
         <div className="card-grid">
           <div className="card one">
             <div className="card-info">
-              <div>
+              <div className="color-light">
                 <h3>Internship</h3>
               </div>
             </div>
@@ -17,11 +17,15 @@ export default function Education() {
             <div className="card-info">
               <div>
                 <h3>Sphinxly</h3>
-                <p>CMS</p>
-                <p>JavaScript</p>
-                <p>JQuery</p>
-                <p>Git</p>
-                <p>Slack</p>
+                <p>
+                  <h5>
+                    FrontEnd development
+                    <br />
+                    <br />
+                  </h5>
+                  Developed responsive user-friendly websites for companies.
+                  Interacted with EasyWeb CMS.
+                </p>
               </div>
             </div>
           </div>
@@ -29,6 +33,15 @@ export default function Education() {
             <div className="card-info">
               <div>
                 <h3>NetEnt</h3>
+                <p>
+                  <h5>
+                    BackEnd development
+                    <br />
+                    <br />
+                  </h5>
+                  Worked with Data lake. Used Java and Golang. Interacted with
+                  hydra database.
+                </p>
               </div>
             </div>
           </div>
