@@ -7,6 +7,9 @@ import Contact from "./Contact";
 import Education from "./Education";
 import Resume from "./Resume";
 import Projects from "./Projects";
+import { IoIosContact } from 'react-icons/io';
+import { GrResume } from 'react-icons/gr';
+
 
 export default function Header() {
   return (

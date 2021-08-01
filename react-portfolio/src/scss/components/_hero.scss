@@ -5,6 +5,13 @@
   margin-top: 10rem;
   font-family: "Lato";
 
+  div {
+    p {
+      margin-top: 10rem;
+      max-width: 500px;
+    }
+  }
+
   h1 {
     font-size: 5rem;
     margin-bottom: 0;
@@ -25,7 +32,7 @@
   img {
     max-width: 500px;
     max-height: 500px;
-    box-shadow: 0 19px 38px #999;
+    box-shadow: 0 0px 8px #999;
     border-radius: 12px;
 
     @include lg-phone {

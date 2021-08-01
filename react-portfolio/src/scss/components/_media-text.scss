@@ -52,9 +52,38 @@
 
       p {
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-family: "Lato";
+        margin: 5px;
       }
     }
+  }
+}
+
+
+.pdf {
+  width: 100%;
+  height: 170vh;
+  overflow: hidden;
+  padding: 50px;
+
+  p {
+
+    a {
+    color: #fff;
+
+    &:hover {
+      color: #1b4e61;
+      box-shadow: 0 14px 0px #1b4e61;
+    }
+  }
+}
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    border: 2px solid black;
+    background-color: black;
   }
 }
