@@ -1,6 +1,6 @@
 ﻿.hero-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 10rem;
   margin-top: 10rem;
   font-family: "Lato";
@@ -33,7 +33,7 @@
     max-width: 500px;
     max-height: 500px;
     box-shadow: 0 0px 8px #999;
-    border-radius: 12px;
+    border-radius: 50%;
 
     @include lg-phone {
       max-width: 250px;

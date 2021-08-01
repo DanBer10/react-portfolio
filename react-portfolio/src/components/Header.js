@@ -2,13 +2,15 @@ import React from "react";
 import "../scss/sections/_header.scss";
 import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
 import Hero from "./Hero";
-import Skills from "./Skills";
+import About from "./About";
 import Contact from "./Contact";
 import Education from "./Education";
 import Resume from "./Resume";
 import Projects from "./Projects";
 import { IoIosContact } from 'react-icons/io';
-import { GrResume } from 'react-icons/gr';
+
+
+
 
 
 export default function Header() {
@@ -22,7 +24,7 @@ export default function Header() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/skills">Skills</Link>
+                <Link to="/about">About</Link>
               </li>
               <li>
                 <Link to="/projects">Projects</Link>
@@ -34,7 +36,7 @@ export default function Header() {
                 <Link to="/resume">Resume</Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact">Contact <IoIosContact /></Link>
               </li>
             </ul>
           </div>
@@ -43,8 +45,8 @@ export default function Header() {
           <Route exact path="/">
             <Hero />
           </Route>
-          <Route exact path="/skills">
-            <Skills />
+          <Route exact path="/about">
+            <About />
           </Route>
           <Route exact path="/contact">
             <Contact />

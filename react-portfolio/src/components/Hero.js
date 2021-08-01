@@ -7,7 +7,7 @@ export default function Hero() {
     <div className="hero-container content-standard">
       <div className="hero-info">
         <div>
-          <h1>Daniel Bernhardt</h1>
+          <h1>Hi, I'm Daniel</h1>
           <h3>FrontEnd developer</h3>
           <p>
           Software Engineering graduate from Nackademin, experienced
