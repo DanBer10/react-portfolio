@@ -1,68 +1,27 @@
-﻿/* ADD THIS LINE UNDER IN ALL FILES YOU WANT TO REACH VARIABLES AND MIXINS EASY */
-/// <reference path="../css.scss" />
+﻿.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: 100px;
+  grid-template-areas:
+    "a a "
+    "b c";
 
-
-
-// or
-
-.or-items {
-    padding: 10rem 0;
-
-    @include lg-phone {
-        padding: 5rem 15px;
+  align-items: start;
+  .card {
+    &.one {
+      grid-area: a;
+      margin: 0 auto;
     }
 
-    .or-header {
-        margin: 0 0 20px;
-        max-width: 700px;
-
-        @include lg-phone {
-            padding: 0 15px;
-
-            h1 {
-                font-size: 4rem !important;
-            }
-
-            h4 {
-                font-size: 1.5rem !important;
-            }
-        }
+    &.two {
+      grid-area: b;
+      margin: 0 auto;
     }
 
-    .sub-header {
-        margin: 0;
-        font-weight: 300;
-        letter-spacing: .1rem;
-        font-size: 3rem;
-        text-transform: uppercase;
+    &.three {
+      grid-area: c;
+      margin: 0 auto;
     }
-
-    h1 {
-        font-size: 60pt;
-        margin: 0 0 20px;
-        font-weight: 500;
-    }
+  }
 }
-
-
-.or-images {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-
-
-    img {
-        width: 130px;
-        height: 40px;
-        padding: 0;
-        margin: 10px 20px;
-    }
-
-    .or-row {
-        width: 100%;
-        padding-top: 20px;
-    }
-}
-
-
-    

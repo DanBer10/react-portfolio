@@ -21,6 +21,9 @@ export default function Header() {
                 <Link to="/skills">Skills</Link>
               </li>
               <li>
+                <Link to="/contact">Projects</Link>
+              </li>
+              <li>
                 <Link to="/education">Education</Link>
               </li>
               <li>
