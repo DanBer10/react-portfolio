@@ -3,12 +3,16 @@ header {
   background-color: #08020b;
   color: white;
   max-height: 150px;
+
+
 }
 
 .inner-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+
 
   h1 {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
