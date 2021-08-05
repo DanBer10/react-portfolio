@@ -3,7 +3,7 @@ import React from "react";
 export default function Education() {
   return (
     <div className="fullScreen-container">
-      <div className="content-standard">
+      <div className="content-small">
         <h2 className="title">System engineer Nackademin</h2>
         <div className="card-grid">
           <div className="card one">

@@ -1,12 +1,11 @@
 import React from "react";
-import social from "../images/social.svg";
 import { AiOutlinePhone, AiTwotoneMail, AiFillLinkedin } from 'react-icons/ai'
 
 export default function Contact() {
   return (
     <>
       <div className="fullScreen-container">
-        <div className="content-standard">
+        <div className="content-small">
           <div className="card-container">
             <div className="card big">
               <div className="card-info">
@@ -27,7 +26,6 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <img src={social} height="500" width="500" alt="didnt find img" />
           </div>
         </div>
       </div>
