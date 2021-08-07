@@ -1,19 +1,25 @@
 ﻿.hero-info {
   display: flex;
-  justify-content: space-around;
- 
+  justify-content: space-between;
   margin-top: 10rem;
+  margin-bottom: 10rem;
   font-family: "Lato";
+  min-height: 172px;
+
+  margin-left: 29rem;
 
   div {
     p {
+      margin-top: 10rem;
       max-width: 500px;
+      text-align: justify;
+      position: absolute;
     }
   }
 
   h1 {
     font-size: 5rem;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
     font-weight: 700;
     display: flex;
     // text-shadow: rgb(0 0 0 / 25%) 2px 3px 3px;
@@ -29,14 +35,81 @@
   }
 
   img {
-    max-width: 500px;
+    max-width: 357px;
     max-height: 500px;
-    box-shadow: 0 0px 8px #999;
+
     border-radius: 50%;
 
     @include lg-phone {
       max-width: 250px;
       max-height: 250px;
+    }
+  }
+}
+
+.background-text {
+  margin-top: 7rem;
+  max-width: 600px;
+  margin-right: 300px;
+
+  p {
+    margin-top: 13rem;
+    font-family: "Lato";
+    text-align: justify;
+  }
+}
+
+.gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  max-height: 100vh;
+
+  img {
+    width: 40vw;
+    max-height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero-background {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  & > div {
+    width: 50%;
+    height: 100vh;
+  }
+}
+
+.about-arrow-down {
+  display: flex;
+  justify-content: center;
+  margin-top: 20rem;
+  max-width: 600px;
+
+  a {
+    color: white;
+    text-align: center;
+
+    svg {
+      height: 35px;
+      width: 35px;
+      transition: 0.6s ease;
+
+      &:hover {
+        height: 45px;
+        width: 45px;
+        color: #1b4e61;
+      }
     }
   }
 }

@@ -1,10 +1,10 @@
 header {
   margin: 0;
-  background-color: #08020b;
+  background-color: transparent;
   color: white;
   max-height: 150px;
-
-
+  display: flex;
+  justify-content: center;
 }
 
 .inner-header {
@@ -12,7 +12,8 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-
+  z-index: 1000;
+  position: fixed;
 
   h1 {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -28,6 +29,7 @@ header {
 
     li {
       list-style: none;
+      margin-left: 2rem;
 
       a {
         text-decoration: none;
@@ -40,7 +42,7 @@ header {
 
         &:hover {
           color: snow;
-          box-shadow: 0 4px 0px #1b4e61;
+          box-shadow: 0 4px 0px #548ab5;
         }
       }
     }

@@ -1,5 +1,6 @@
 import React from "react";
-import { AiOutlinePhone, AiTwotoneMail, AiFillLinkedin } from 'react-icons/ai'
+import me from "../images/me.JPG";
+import { AiOutlinePhone, AiTwotoneMail, AiFillLinkedin } from "react-icons/ai";
 
 export default function Contact() {
   return (
@@ -12,20 +13,37 @@ export default function Contact() {
                 <div>
                   <h2>Daniel Bernhardt</h2>
                   <div>
-                    <h3>< AiOutlinePhone /></h3>
+                    <h3>
+                      <AiOutlinePhone />
+                    </h3>
                     <a href="tel: +46705189424">+46705189424</a>
                   </div>
                   <div>
-                    <h3><AiTwotoneMail /></h3>
-                    <a href="mailto:Danielbernhardt1996@outlook.com">Danielbernhardt1996@outlook.com</a>
+                    <h3>
+                      <AiTwotoneMail />
+                    </h3>
+                    <a href="mailto:Danielbernhardt1996@outlook.com">
+                      danielbernhardt1996@outlook.com
+                    </a>
                   </div>
                   <div>
-                    <h3><AiFillLinkedin /></h3>
-                    <a href="https://se.linkedin.com/in/danielbernhardtt" target="_blank" rel="noreferrer">danielbernhardtt</a>
+                    <h3>
+                      <AiFillLinkedin />
+                    </h3>
+                    <a
+                      href="https://se.linkedin.com/in/danielbernhardtt"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      danielbernhardtt
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div>
+            <img src={me} alt="hittade ej bild" className="programmer" />
           </div>
         </div>
       </div>

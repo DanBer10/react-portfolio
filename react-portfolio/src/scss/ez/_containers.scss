@@ -1,58 +1,56 @@
 /* ADD THIS LINE UNDER IN ALL FILES YOU WANT TO REACH VARIABLES AND MIXINS EASY */
-/// <reference path="includes/_mediaqueries.scss" /> 
+/// <reference path="includes/_mediaqueries.scss" />
 
 section {
+  &.standard {
+  }
 
-    &.standard {
+  &.background {
+  }
 
-    }
+  &.color {
+  }
 
-    &.background {
-
-    }
-
-    &.color {
-
-    }
-
-    &.fullscreen {
-        min-height: calc(100vh + 40px);
-        width: 100%;
-    }
-
+  &.fullscreen {
+    min-height: calc(100vh + 40px);
+    width: 100%;
+  }
 }
 
 //Standard containers
 .content {
+  &-full {
+    width: 100%;
+  }
 
-    &-full {
-        width: 100%;
-    }
+  &-wide {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
 
-    &-wide {
-        width: 100%;
-        max-width: 1600px;
-        margin: 0 auto;
-    }
+  &-standard {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 
-    &-standard {
-        width: 100%;
-        max-width: 1400px;
-        margin: 0 auto;
-    }
+  &-small {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
 
-    &-small {
-        width: 100%;
-        max-width: 1080px;
-        margin: 0 auto;
-    }
+  &-mini {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
-    &-mini {
-        width: 100%;
-        max-width: 900px;
-        margin: 0 auto;
-    }
-
-    &-mini, &-full, &-wide, &-standard, &-small {
-    }
+  &-mini,
+  &-full,
+  &-wide,
+  &-standard,
+  &-small {
+  }
 }

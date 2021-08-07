@@ -1,53 +1,82 @@
 import "./../scss/components/_media-text.scss";
-import { AiOutlineArrowDown } from "react-icons/ai"
+import { AiOutlineArrowDown } from "react-icons/ai";
+import { CSSTransition } from "react-transition-group";
+
+import { useState } from "react";
+import FadeIn from "react-fade-in";
 
 export default function Skills() {
+  const [showFront, setShowFront] = useState(false);
+  const [showGeneral, setShowGeneral] = useState(false);
+  const [showBack, setShowBack] = useState(false);
 
-
+  function toggleFront(e) {
+    e.preventDefault();
+    setShowFront((prevState) => !prevState);
+    setShowGeneral(false);
+    setShowBack(false);
+  }
+  function toggleGeneral(e) {
+    e.preventDefault();
+    setShowGeneral((prevState) => !prevState);
+    setShowFront(false);
+    setShowBack(false);
+  }
+  function toggleBack(e) {
+    e.preventDefault();
+    setShowBack((prevState) => !prevState);
+    setShowGeneral(false);
+    setShowFront(false);
+  }
 
   return (
     <>
       <div className="content-small">
         <div className="about-text">
+          <h3>
+            Hello, I'm <span>Daniel Bernhardt.</span>
+          </h3>
+          <br />
           <p>
-          Hello I'm <big>Daniel.</big><br /> A Front End Developer based in Sweden. I specialise in creating interactive experiences and functional interfaces using React, JavaScript and Design Systems.
-          I strive to create elegant solutions that surprise and delight users, while keeping complex technical dependencies in mind for implementation, scalability and developer sanity.
+            A Front End Developer based in Stockholm, Sweden. I specialise in
+            creating interactive experiences and functional interfaces using
+            React, JavaScript and Design Systems. I strive to create elegant
+            solutions that surprise and delight users, while keeping complex
+            technical dependencies in mind for implementation and scalability.
           </p>
-          <div className="about-arrow-down">
-            <a href="#skills"> <AiOutlineArrowDown /></a>
-        </div>
-
-        </div>
-  
-
-        <h2 className="title" id="skills">skills</h2>
-        <div className="card-container">
-          <div className="card">
-            <div className="card-info">
-              <div>
-                <h3>FrontEnd</h3>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-                <p>ReactJS</p>
-                <p>SASS</p>
-                <p>CMS</p>
-                <p>JQuery</p>
-                <p>FireBase</p>
-                <p>OOP</p>
-              </div>
-            </div>
+          <br />
+          <div className="competencies">
+            <p>
+              Find below my <a href="#skills">skills</a> and{" "}
+              <a href="#skills">IT competencies</a>{" "}
+            </p>
           </div>
-          <div className="card">
-            <div className="card-info">
+          <div className="about-arrow-down">
+            <a href="#skills">
+              {" "}
+              <AiOutlineArrowDown />
+            </a>
+          </div>
+        </div>
+
+        <div className="title" id="skills"></div>
+
+        <div className="skills-container">
+          <div>
+            <h3>
+              <span
+                onMouseEnter={toggleGeneral}
+                onMouseLeave={() => setShowGeneral(false)}
+              >
+                General
+              </span>
+            </h3>
+            {showGeneral ? (
               <div>
-                <h3>General</h3>
-                <p>Teamplayer</p>
-                <p>Fast learner</p>
                 <p>Swedish (ILR 5)</p>
                 <p>English (ILR 4)</p>
-                <p>team player</p>
-                <p>fast learner</p>
+                <p>Teamplayer</p>
+                <p>Fast learner</p>
                 <p>visual thinker</p>
                 <p>agile methodology</p>
                 <p>time management</p>
@@ -55,19 +84,50 @@ export default function Skills() {
                 <p>adaptable</p>
                 <p>user experience</p>
               </div>
-            </div>
+            ) : null}
           </div>
-          <div className="card">
-            <div className="card-info">
+          <div>
+            <h3>
+              <span
+                onMouseEnter={toggleFront}
+                onMouseLeave={() => setShowFront(false)}
+              >
+                FrontEnd
+              </span>
+            </h3>
+            {showFront ? (
               <div>
-                <h3>BackEnd</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>ReactJS</p>
+                <p>SASS</p>
+                <p>CMS</p>
+                <p>JQuery</p>
+                <p>OOP</p>
+              </div>
+            ) : null}
+          </div>
+
+          <div>
+            <h3>
+              <span
+                onMouseEnter={toggleBack}
+                onMouseLeave={() => setShowBack(false)}
+              >
+                BackEnd
+              </span>
+            </h3>
+            {showBack ? (
+              <div>
                 <p>Java</p>
                 <p>MySQL</p>
                 <p>Docker</p>
                 <p>Git</p>
                 <p>OOP</p>
+                <p>FireBase</p>
               </div>
-            </div>
+            ) : null}
           </div>
         </div>
       </div>

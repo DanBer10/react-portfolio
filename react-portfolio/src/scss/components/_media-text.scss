@@ -2,7 +2,6 @@
   margin-top: 5rem;
   margin-bottom: 5rem;
   display: flex;
-  justify-content: space-between;
 }
 
 .color-light {
@@ -20,7 +19,8 @@
 .card-container {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 10rem;
+  margin-bottom: 25rem;
+  margin-top: 10rem;
 }
 .card {
   border-radius: 12px;
@@ -53,8 +53,8 @@
       }
 
       svg {
-       width: 35px; 
-       height: 35px; 
+        width: 35px;
+        height: 35px;
       }
 
       a {
@@ -80,7 +80,9 @@
   }
 }
 
-.card1, .card2, .card3 {
+.card1,
+.card2,
+.card3 {
   border-radius: 12px;
   max-width: 300px;
   width: 100%;
@@ -98,25 +100,32 @@
   height: 170vh;
   overflow: hidden;
   padding: 50px;
+  margin-top: 10rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   p {
-
+    text-align: center;
     a {
-    color: #fff;
+      color: #fff;
+      font-family: "Lato";
 
-    &:hover {
-      color: #1b4e61;
-      box-shadow: 0 14px 0px #1b4e61;
+      &:hover {
+        color: #1b4e61;
+      }
     }
   }
-}
 
   iframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
+    width: 81.7%;
+    height: 75%;
+    border-radius: 8px;
     border: 2px solid black;
     background-color: black;
+    overflow-x: hidden;
   }
 }
 
@@ -126,22 +135,42 @@
   margin: 0 auto;
   align-items: center;
   flex-direction: column;
-  height: 72vh;
+  height: 80vh;
   margin-top: 10rem;
   text-align: justify;
+  font-family: "Lato";
 
+  h3 {
+    font-family: "Lato";
+    span {
+      color: #548ab5;
+    }
+  }
 
   p {
-    big {
-      color: #1b4e61;
+    line-height: 1.8;
+  }
+
+  .competencies {
+    p {
+      font-style: italic;
+
+      a {
+        color: white;
+        transition: 0.6s ease;
+        &:hover {
+          color: #d6d2c4;
+          cursor: pointer;
+        }
+      }
     }
   }
 
   .about-arrow-down {
     display: flex;
     justify-content: center;
-    margin-top: 10rem;
-    
+    margin-top: 20rem;
+
     a {
       color: white;
       text-align: center;
@@ -155,6 +184,53 @@
           height: 45px;
           width: 45px;
           color: #1b4e61;
+        }
+      }
+    }
+  }
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  margin: 0 auto;
+  height: 100vh;
+  font-family: "Lato";
+  transition: 2s ease;
+
+  & > div {
+    width: 33%;
+    text-align: center;
+
+    & p {
+      text-transform: capitalize;
+      transition: opacity 300ms ease-in;
+    }
+
+    & h3 {
+      font-weight: 200;
+      text-transform: capitalize;
+
+      cursor: pointer;
+      margin-top: 11rem;
+      margin-bottom: 10rem;
+
+      & span {
+        border: 1px solid #f8f6f6;
+        padding: 3px 20px;
+        border-radius: 2px;
+
+        // test
+        // background: linear-gradient(to top, #08020b 50%, #006680 50%) bottom;
+        background-size: 200%;
+        transition: 0.5s ease-out;
+
+        &:hover {
+          background-color: #05435a;
+          border: 1px solid #05435a;
+          background-position: left;
         }
       }
     }
