@@ -1,50 +1,58 @@
-import React from "react";
 import "../scss/sections/_header.scss";
 import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
+
+import { NavLink } from "react-router-dom";
+
 import Hero from "./Hero";
 import About from "./About";
 import Contact from "./Contact";
-import Education from "./Education";
 import Resume from "./Resume";
-import Projects from "./Projects";
 import Data from "./data/headerData";
+import logo from "../images/bernhardt-trans.png";
 
-export default function Header() {
+const Header = () => {
   return (
     <>
       <Router>
         <header>
-          <div className='inner-header content-small'>
+          <div className="inner-header content-standard">
+            <div className="logo-header">
+              <a href="/">
+                <img src={logo} alt="didnt find" />
+              </a>
+            </div>
             {Data.map((data) => (
               <ul key={data.id}>
                 <li>
-                  <Link to={data.adress} >{data.title}</Link>
+                  <NavLink
+                    activeClassName="navbar__link--active"
+                    exact
+                    to={data.adress}
+                  >
+                    {data.title}
+                  </NavLink>
                 </li>
               </ul>
             ))}
           </div>
         </header>
         <Switch>
-          <Route exact path='/'>
+          <Route exact path="/">
             <Hero />
           </Route>
-          <Route exact path='/about'>
+          <Route exact path="/about">
             <About />
           </Route>
-          <Route exact path='/contact'>
+          <Route exact path="/contact">
             <Contact />
           </Route>
-          <Route exact path='/education'>
-            <Education />
-          </Route>
-          <Route exact path='/resume'>
+          <Route exact path="/resume">
             <Resume />
-          </Route>
-          <Route exact path='/projects'>
-            <Projects />
           </Route>
         </Switch>
       </Router>
     </>
   );
-}
+};
+
+export default Header;

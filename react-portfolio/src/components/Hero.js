@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { AiOutlineArrowDown } from "react-icons/ai";
+import { IoIosArrowForward } from "react-icons/io";
 
 import Typist from "react-typist";
 
-import hej from "../images/gif-2.gif";
+import gif2 from "../images/gif-2.gif";
 
 export default function Hero() {
   const [count, setCount] = useState(1);
@@ -19,7 +19,7 @@ export default function Hero() {
         <div className="container">
           <div>
             <div className="gif">
-              <img src={hej}></img>
+              <img src={gif2}></img>
             </div>
 
             <div className="hero-info">
@@ -60,11 +60,23 @@ export default function Hero() {
                   solving skills.
                 </p>
               </div>
-              <div className="about-arrow-down">
-                <a href="#">
-                  {" "}
-                  <AiOutlineArrowDown />
-                </a>
+
+              <div className="hire-container">
+                <p>
+                  If you are a startup seeking to develop a web presence, a
+                  business looking to upgrade your website or an employer
+                  looking to hire, you can get in touch with me here.
+                </p>
+                <div className="btn-container">
+                  <a href="mailto:danielbernhardt1996@outlook.com">
+                    I need a website{" "}
+                    <IoIosArrowForward style={{ marginLeft: "20px" }} />
+                  </a>
+                  <a href="mailto:danielbernhardt1996@outlook.com">
+                    I'm looking to hire{" "}
+                    <IoIosArrowForward style={{ marginLeft: "20px" }} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

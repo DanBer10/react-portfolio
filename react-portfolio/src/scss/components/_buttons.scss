@@ -1,95 +1,73 @@
-﻿/* ADD THIS LINE UNDER IN ALL FILES YOU WANT TO REACH VARIABLES AND MIXINS EASY */
-/// <reference path="../css.scss" />
+﻿.hire-container {
+  display: flex;
+  width: 100%;
+  margin-top: 9rem;
+  flex-direction: column;
+  max-width: 600px;
+  text-align: justify;
+  font-family: "lato";
+  font-size: 1.7rem;
 
-
-
-.btn-standard {
-    background-color: #051e27;
-    color: white;
-    max-width: 450px;
-    padding: 20px;
-    letter-spacing: 3px;
-    border: none;
-    cursor: pointer;
-    background: linear-gradient(to right, $color-green 50%, #051e27 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all 600ms ease-out;
-
-
-    @include lg-phone {
-        font-size: 1.1rem !important;
-        max-width: 100%;
-        margin-top: 30px;
-        
-    }
-
-    &:hover {
-        background-position: left bottom;
-    }
-}
-
-
-
-#wwe-button {
-    margin: 5rem 50rem;
-    padding: 20px 6rem;
-
-    @include lg-phone {
-        margin: 0;
-    }
-}
-
-.btn-standard-wide {
-    padding: 15px;
-    width: 100%;
-    color: white;
-    letter-spacing: 3px;
-    margin-top: 4rem;
-    border: none;
-    cursor: pointer;
-    background-color: $color-blue;
-    color: $color-white;
-    transition: 600ms;
-
-    &:hover {
-        color: $color-green;
-    }
-
-    @include lg-phone {
-        font-size: 1rem;
-    }
-    
-}
-
-
-
-.btn-standard-small {
-    padding: 10px;
-    color: $color-white;
-    background-color: $color-blue;
-    cursor: pointer;
-    letter-spacing: 3px;
-    margin-top: 5rem;
-    border: none;
-    max-width: 200px;
-    width: 100%;
-    transition: 600ms;
-
-    @include lg-phone {
-        max-width: 150px !important;
-        font-size: 1rem;
-    }
-
-    &:hover {
-        color: $color-green;
-    }
-}
-.margin-left-btn {
-    margin-left: 33px;
-}
-
-.otr-buttons {
+  .btn-container {
     display: flex;
     justify-content: space-between;
+    max-width: 505px;
+    a {
+      padding: 15px 45px;
+      font-size: 16px;
+      font-family: "Lato";
+      color: white;
+      transition: all 0.3s ease-in-out;
+      background-color: #2f2e2e;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:nth-child(1) {
+        background: #e16262;
+        background: linear-gradient(to right, #e16262 50%, #2f2e2e 50%) left;
+        background-size: 200%;
+        transition: 0.5s ease-out;
+
+        &:hover {
+          background-position: right;
+        }
+      }
+
+      &:nth-child(2) {
+        margin-left: 20px;
+        background: linear-gradient(to left, #2f2e2e 50%, #e16262 50%) right;
+        background-size: 200%;
+        transition: 0.5s ease-out;
+
+        &:hover {
+          background-position: left;
+        }
+      }
+    }
+  }
+}
+
+.btn-standard {
+  padding: 10px 45px;
+  font-size: 14px;
+  font-family: "Lato";
+  color: white;
+  transition: all 0.3s ease-in-out;
+  background-color: #2f2e2e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 140px;
+  font-weight: 400;
+
+  background: #e16262;
+  background: linear-gradient(to left, #2f2e2e 50%, #e16262 50%) right;
+  opacity: 0.7;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+
+  &:hover {
+    background-position: left;
+  }
 }
