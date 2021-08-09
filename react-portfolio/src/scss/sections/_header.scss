@@ -7,6 +7,17 @@ header {
   justify-content: center;
 }
 
+.logo-header {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 150px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .inner-header {
   display: flex;
   justify-content: space-between;
@@ -36,15 +47,20 @@ header {
         color: white;
         margin-right: 20px;
         transition: 0.3s ease;
-        font-family: "Lato";
-        font-weight: 200;
-        text-transform: capitalize;
+        font-family: "Bebas Neue";
+        text-transform: uppercase;
 
         &:hover {
-          color: snow;
-          box-shadow: 0 4px 0px #548ab5;
+          color: lightgrey;
+          box-shadow: 0 4px 0px #b62b2b;
         }
       }
     }
   }
+}
+
+.navbar__link--active {
+  box-shadow: 0 4px 0px #b62b2b;
+  transition: border-bottom 0.5s ease-in-out;
+  color: darkgrey !important;
 }

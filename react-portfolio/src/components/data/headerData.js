@@ -14,11 +14,11 @@ const headerData = [
   //     title: 'Projects',
   //     adress: '/projects',
   // },
-  {
-    id: 4,
-    title: "Education",
-    adress: "/education",
-  },
+  // {
+  // //   id: 4,
+  // //   title: "Education",
+  // //   adress: "/education",
+  // // },
   {
     id: 5,
     title: "Resume",

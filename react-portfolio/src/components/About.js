@@ -1,9 +1,9 @@
 import "./../scss/components/_media-text.scss";
 import { AiOutlineArrowDown } from "react-icons/ai";
-import { CSSTransition } from "react-transition-group";
+import codebackground from "../images/code-background.jpg";
+import meGif from "../images/bernhardt-2.gif";
 
 import { useState } from "react";
-import FadeIn from "react-fade-in";
 
 export default function Skills() {
   const [showFront, setShowFront] = useState(false);
@@ -32,6 +32,11 @@ export default function Skills() {
   return (
     <>
       <div className="content-small">
+        <div className="display-flex justify-center m-t-6">
+          <div className="about-me-gif">
+            <img src={meGif} alt="didnt find img" />
+          </div>
+        </div>
         <div className="about-text">
           <h3>
             Hello, I'm <span>Daniel Bernhardt.</span>
@@ -58,10 +63,14 @@ export default function Skills() {
             </a>
           </div>
         </div>
+        <div id="skills"></div>
+      </div>
 
-        <div className="title" id="skills"></div>
-
-        <div className="skills-container">
+      <section
+        className="content-full background"
+        style={{ background: codebackground }}
+      >
+        <div className="content-standard skills-container">
           <div>
             <h3>
               <span
@@ -71,8 +80,9 @@ export default function Skills() {
                 General
               </span>
             </h3>
+
             {showGeneral ? (
-              <div>
+              <div className="text shadow">
                 <p>Swedish (ILR 5)</p>
                 <p>English (ILR 4)</p>
                 <p>Teamplayer</p>
@@ -96,7 +106,7 @@ export default function Skills() {
               </span>
             </h3>
             {showFront ? (
-              <div>
+              <div className="text shadow">
                 <p>HTML</p>
                 <p>CSS</p>
                 <p>JavaScript</p>
@@ -119,7 +129,7 @@ export default function Skills() {
               </span>
             </h3>
             {showBack ? (
-              <div>
+              <div className="text shadow">
                 <p>Java</p>
                 <p>MySQL</p>
                 <p>Docker</p>
@@ -130,7 +140,7 @@ export default function Skills() {
             ) : null}
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
