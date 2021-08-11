@@ -1,6 +1,6 @@
 {
-  "homepage": "https://danber10.github.io/gh-pages",
   "name": "react-portfolio",
+  "homepage": "https://danber10.github.io/gh-pages",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
