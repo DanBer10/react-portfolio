@@ -1,5 +1,5 @@
 import "../scss/sections/_header.scss";
-import { Route, Link, Switch, HashRouter as Router } from "react-router-dom";
+import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
 
 import { NavLink } from "react-router-dom";
 
@@ -13,7 +13,7 @@ import logo from "../images/bernhardt-trans.png";
 const Header = () => {
   return (
     <>
-      <Router basename="react-portfolio">
+      <Router basename="/react-portfolio/">
         <header>
           <div className="inner-header content-standard">
             <div className="logo-header">
