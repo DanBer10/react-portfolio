@@ -13,7 +13,7 @@ import logo from "../images/bernhardt-trans.png";
 const Header = () => {
   return (
     <>
-      <Router>
+      <Router basename="/react-portfolio">
         <header>
           <div className="inner-header content-standard">
             <div className="logo-header">
