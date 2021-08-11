@@ -3,8 +3,6 @@ import emailjs, { init } from "emailjs-com";
 import { AiFillLinkedin } from "react-icons/ai";
 import { TiPhone } from "react-icons/ti";
 import { IoMdMailOpen, IoLogoWhatsapp } from "react-icons/io";
-
-import "react-toastify/dist/ReactToastify.css";
 init("user_wDDr0OQVCk88Xw4XU1Q4O");
 
 export default function Contact() {
