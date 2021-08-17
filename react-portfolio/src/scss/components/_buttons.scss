@@ -25,12 +25,10 @@
 
       &:nth-child(1) {
         background: #e16262;
-        background: linear-gradient(to right, #e16262 50%, #2f2e2e 50%) left;
-        background-size: 200%;
         transition: 0.5s ease-out;
 
         &:hover {
-          background-position: right;
+          background: #692323;
         }
       }
 
