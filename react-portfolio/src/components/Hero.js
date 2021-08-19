@@ -8,9 +8,8 @@ import gif2 from "../images/gif-2.gif";
 export default function Hero() {
   const [count, setCount] = useState(1);
 
+  // For typist
   useEffect(() => {
-    // document.title = `You clicked ${count} times`;
-    console.log("Count: " + count);
     setCount(1);
   }, [count]);
   return (

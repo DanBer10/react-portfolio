@@ -1,5 +1,5 @@
 import "../scss/sections/_header.scss";
-import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 
 import { NavLink } from "react-router-dom";
 

@@ -44,10 +44,14 @@ export default function Contact() {
 
     emailjs.send("service_upq4gtj", "template_ybrb1lo", templateParams).then(
       function (response) {
-        alert("SUCCESS!", response.status, response.text);
+        alert("Succes, email was sent!", response.status, response.text);
       },
       function (err) {
-        alert("ERROR!", err.status, err.text);
+        alert(
+          "ERROR, email was not sent correctly, please try again!",
+          err.status,
+          err.text
+        );
       }
     );
     setName("");
@@ -126,10 +130,7 @@ export default function Contact() {
             >
               <AiFillLinkedin />
             </a>
-            <a
-              href="
-https://api.whatsapp.com/send?phone=46705189424&text=Hey%20Daniel!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20contact%20you%20regarding%20..."
-            >
+            <a href="https://api.whatsapp.com/send?phone=46705189424&text=Hey%20Daniel!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20contact%20you%20regarding%20...">
               <IoLogoWhatsapp />
             </a>
           </div>
