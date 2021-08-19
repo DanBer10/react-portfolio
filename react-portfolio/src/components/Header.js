@@ -1,5 +1,10 @@
 import "../scss/sections/_header.scss";
-import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+import {
+  Route,
+  Switch,
+  BrowserRouter as Router,
+  Redirect,
+} from "react-router-dom";
 
 import { NavLink } from "react-router-dom";
 
@@ -17,7 +22,7 @@ const Header = () => {
         <header>
           <div className="inner-header content-standard">
             <div className="logo-header">
-              <a href="/">
+              <a href="/react-portfolio">
                 <img src={logo} alt="didnt find" />
               </a>
             </div>
@@ -38,15 +43,18 @@ const Header = () => {
         </header>
         <Switch>
           <Route exact path="/">
+            <Redirect to="/react-portfolio/" />
+          </Route>
+          <Route exact path="/react-portfolio/">
             <Hero />
           </Route>
-          <Route exact path="/about">
+          <Route exact path="/react-portfolio/about">
             <About />
           </Route>
-          <Route exact path="/contact">
+          <Route exact path="/react-portfolio/contact">
             <Contact />
           </Route>
-          <Route exact path="/resume">
+          <Route exact path="/react-portfolio/resume">
             <Resume />
           </Route>
         </Switch>

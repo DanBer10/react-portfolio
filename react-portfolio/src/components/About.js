@@ -70,7 +70,7 @@ export default function Skills() {
         className="content-full background"
         style={{ background: codebackground }}
       >
-        <div className="content-standard skills-container">
+        <div className="content-small skills-container">
           <div>
             <h3>
               <span
@@ -82,7 +82,7 @@ export default function Skills() {
             </h3>
 
             {showGeneral ? (
-              <div className="text shadow">
+              <div>
                 <p>Swedish (ILR 5)</p>
                 <p>English (ILR 4)</p>
                 <p>Teamplayer</p>
@@ -106,7 +106,7 @@ export default function Skills() {
               </span>
             </h3>
             {showFront ? (
-              <div className="text shadow">
+              <div>
                 <p>ReactJS</p>
                 <p>HTML</p>
                 <p>CSS</p>
@@ -130,7 +130,7 @@ export default function Skills() {
               </span>
             </h3>
             {showBack ? (
-              <div className="text shadow">
+              <div>
                 <p>Java</p>
                 <p>MySQL</p>
                 <p>Docker</p>

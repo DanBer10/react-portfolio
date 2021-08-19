@@ -111,6 +111,7 @@
 
   p {
     text-align: center;
+    font-size: 3rem;
     a {
       color: #fff;
       font-family: "Lato";
@@ -199,20 +200,24 @@
   margin-bottom: 5rem;
   margin-top: 5rem;
   margin: 0 auto;
-  height: 100vh;
+  height: 70vh;
   font-family: "Lato";
   transition: 2s ease;
 
   & > div {
-    width: 33%;
     text-align: center;
+    max-width: 401px;
+    width: 100%;
 
     & p {
       text-transform: capitalize;
       transition: opacity 300ms ease-in;
     }
 
-    & h3 {
+    & span {
+      border: 1px solid #f8f6f6;
+      padding: 3px 20px;
+      border-radius: 2px;
       font-weight: 200;
       text-transform: capitalize;
 
@@ -220,27 +225,24 @@
       margin-top: 11rem;
       margin-bottom: 10rem;
 
-      & span {
-        border: 1px solid #f8f6f6;
-        padding: 3px 20px;
-        border-radius: 2px;
+      // test
+      // background: linear-gradient(to top, #08020b 50%, #006680 50%) bottom;
+      background-size: 200%;
+      transition: 0.5s ease-out;
 
-        // test
-        // background: linear-gradient(to top, #08020b 50%, #006680 50%) bottom;
-        background-size: 200%;
-        transition: 0.5s ease-out;
-
-        &:hover {
-          background-color: #b62b2b;
-          border: 1px solid #b62b2b;
-          background-position: left;
-        }
+      &:hover {
+        background-color: #b62b2b;
+        border: 1px solid #b62b2b;
+        background-position: left;
       }
     }
   }
 
   @media screen and (max-width: 700px) {
     h3 {
+      font-size: 1.5rem;
+    }
+    p {
       font-size: 1.5rem;
     }
   }
@@ -250,7 +252,8 @@
   padding-top: 100px;
   padding-bottom: 100px;
   background-size: cover;
-  min-height: 500px;
+  background-position: center;
+  max-height: 80vh;
   filter: contrast(95%) grayscale(20%);
   background-image: url(../../images/code-background.jpg);
   position: relative;
@@ -422,8 +425,8 @@
 }
 
 .about-me-gif {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 267px;
+  max-height: 267px;
 
   img {
     width: 100%;

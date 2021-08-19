@@ -2,12 +2,12 @@ const headerData = [
   {
     id: 1,
     title: "Home",
-    adress: "/",
+    adress: "/react-portfolio/",
   },
   {
     id: 2,
     title: "About",
-    adress: "/about",
+    adress: "/react-portfolio/about",
   },
   // {
   //     id: 3,
@@ -22,12 +22,12 @@ const headerData = [
   {
     id: 5,
     title: "Resume",
-    adress: "/resume",
+    adress: "/react-portfolio/resume",
   },
   {
     id: 6,
     title: "Contact",
-    adress: "/contact",
+    adress: "/react-portfolio/contact",
   },
 ];
 

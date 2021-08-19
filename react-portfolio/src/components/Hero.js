@@ -64,11 +64,11 @@ export default function Hero() {
                 You can get in touch with me here.
               </p>
               <div className="btn-container">
-                <a href="/contact">
+                <a href="/react-portfolio/contact">
                   I need a website{" "}
                   <IoIosArrowForward style={{ marginLeft: "20px" }} />
                 </a>
-                <a href="/contact">
+                <a href="/react-portfolio/contact">
                   I'm looking to hire{" "}
                   <IoIosArrowForward style={{ marginLeft: "20px" }} />
                 </a>
