@@ -152,6 +152,11 @@
 
   p {
     line-height: 1.8;
+
+    @media screen and (max-width: 700px) {
+      font-weight: 400;
+      color: white;
+    }
   }
 
   .competencies {
@@ -212,6 +217,11 @@
     & p {
       text-transform: capitalize;
       transition: opacity 300ms ease-in;
+
+      @media screen and (max-width: 700px) {
+        font-weight: 400;
+        color: white;
+      }
     }
 
     & span {
@@ -313,6 +323,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 375px) {
+    padding-top: 10rem;
+    height: 100%;
+  }
 
   .contact-text {
     max-width: 600px;
@@ -323,6 +337,11 @@
 
     p {
       font-family: "lato";
+
+      @media screen and (max-width: 700px) {
+        font-weight: 400;
+        color: white;
+      }
     }
     h1 {
       font-family: "lato";
