@@ -16,10 +16,8 @@ export default function Hero() {
     <>
       <div className="content-full">
         <div className="container">
-          <div>
-            <div className="gif">
-              <img src={gif2}></img>
-            </div>
+          <div className="gif">
+            <img src={gif2}></img>
 
             <div className="hero-info">
               {count ? (
@@ -47,35 +45,33 @@ export default function Hero() {
             </div>
           </div>
 
-          <div>
-            <div className="hero-background">
-              <div className="background-text">
-                <p>
-                  Software Engineering graduate from Nackademin, experienced in
-                  Java programming and front-end web development in a
-                  test-driven environment. I am a dedicated, eager, learner who
-                  thrives in collaborative work environments and am enthusiastic
-                  when it comes to facing new challenges that require problem
-                  solving skills.
-                </p>
-              </div>
+          <div className="hero-background">
+            <div className="background-text">
+              <p>
+                Software/FrontEnd devoloper graduate from Nackademin,
+                experienced in front-end web development and Java programming in
+                a test-driven environment. I am a dedicated, eager, learner who
+                thrives in collaborative work environments and am enthusiastic
+                when it comes to facing new challenges that require problem
+                solving skills.
+              </p>
+            </div>
 
-              <div className="hire-container">
-                <p>
-                  If you are a startup seeking to develop a web presence, a
-                  business looking to upgrade your website or an employer
-                  looking to hire, you can get in touch with me here.
-                </p>
-                <div className="btn-container">
-                  <a href="mailto:danielbernhardt1996@outlook.com">
-                    I need a website{" "}
-                    <IoIosArrowForward style={{ marginLeft: "20px" }} />
-                  </a>
-                  <a href="mailto:danielbernhardt1996@outlook.com">
-                    I'm looking to hire{" "}
-                    <IoIosArrowForward style={{ marginLeft: "20px" }} />
-                  </a>
-                </div>
+            <div className="hire-container">
+              <p>
+                If you are an employer looking to hire, startup seeking to
+                develop a website or a business looking to upgrade your website.
+                You can get in touch with me here.
+              </p>
+              <div className="btn-container">
+                <a href="/contact">
+                  I need a website{" "}
+                  <IoIosArrowForward style={{ marginLeft: "20px" }} />
+                </a>
+                <a href="/contact">
+                  I'm looking to hire{" "}
+                  <IoIosArrowForward style={{ marginLeft: "20px" }} />
+                </a>
               </div>
             </div>
           </div>

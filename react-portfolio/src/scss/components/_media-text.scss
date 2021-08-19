@@ -89,15 +89,25 @@
 
 .pdf {
   width: 100%;
-  height: 170vh;
-  overflow: hidden;
-  padding: 50px;
-  margin-top: 10rem;
-  margin: 0 auto;
+  padding: 100px;
+  margin-top: 13rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+  @media screen and(max-width:1000px) {
+    padding: 20px;
+  }
+
+  div {
+    width: 100%;
+    height: 129vh;
+
+    @media screen and(max-width:1000px) {
+      padding: 20px;
+    }
+  }
 
   p {
     text-align: center;
@@ -112,12 +122,11 @@
   }
 
   iframe {
-    width: 81.7%;
-    height: 75%;
+    width: 100%;
+    height: 85%;
     border-radius: 8px;
     border: 2px solid black;
     background-color: black;
-    overflow-x: hidden;
   }
 }
 
@@ -131,6 +140,7 @@
   text-align: justify;
   font-family: "Lato";
   margin-bottom: 10rem;
+  padding: 30px;
 
   h3 {
     font-family: "Lato";
@@ -228,6 +238,12 @@
       }
     }
   }
+
+  @media screen and (max-width: 700px) {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .background {
@@ -289,7 +305,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   margin: 0;
-  padding: 0;
+  padding: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -309,6 +325,15 @@
       font-family: "lato";
       font-weight: 400;
       font-size: 6rem;
+    }
+
+    @media screen and (max-width: 470px) {
+      h1 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
     }
   }
 
@@ -337,7 +362,7 @@
       color: white;
       font-family: "Lato";
       margin-bottom: 10px;
-      opacity: 0.7;
+      opacity: 0.9;
 
       &::placeholder {
         color: white;

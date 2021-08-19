@@ -3,15 +3,18 @@
   width: 100%;
   margin-top: 9rem;
   flex-direction: column;
-  max-width: 600px;
   text-align: justify;
   font-family: "lato";
   font-size: 1.7rem;
 
+  @media screen and (max-width: 700px) {
+    margin-top: 1rem !important;
+  }
+
   .btn-container {
     display: flex;
     justify-content: space-between;
-    max-width: 505px;
+
     a {
       padding: 15px 45px;
       font-size: 16px;
@@ -41,6 +44,30 @@
         &:hover {
           background-position: left;
         }
+      }
+    }
+
+    @media screen and (max-width: 1090px) {
+      a {
+        padding: 10px 20px;
+      }
+    }
+
+    @media screen and (max-width: 880px) {
+      display: flex;
+      flex-direction: column;
+      a:nth-child(2) {
+        margin-left: 0;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      max-width: 200px;
+    }
+
+    @media screen and (max-width: 700px) {
+      a {
+        margin-bottom: 15px;
       }
     }
   }

@@ -1,11 +1,23 @@
 ﻿.hero-info {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 21rem;
-  margin-bottom: 10rem;
+  position: absolute;
+  top: 260px;
   font-family: "Lato";
-  min-height: 172px;
   margin-left: 27rem;
+  @media screen and (max-width: 1800px) {
+    margin-left: 15rem;
+  }
+
+  @media screen and (max-width: 1380px) {
+    margin-left: 7rem;
+  }
+
+  @media screen and (max-width: 1100px) {
+    margin-left: 3rem;
+  }
+
+  @media screen and (max-width: 700px) {
+    top: 200px;
+  }
 
   div {
     p {
@@ -21,7 +33,21 @@
     margin-bottom: 2rem;
     font-weight: 700;
     display: flex;
-    // text-shadow: rgb(0 0 0 / 25%) 2px 3px 3px;
+    @media screen and (max-width: 1680px) {
+      font-size: 4rem;
+    }
+
+    @media screen and (max-width: 1280px) {
+      font-size: 3.2rem;
+    }
+
+    @media screen and (max-width: 700px) {
+      font-size: 4.7rem;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 3.2rem;
+    }
   }
 
   h3 {
@@ -46,38 +72,61 @@
   }
 }
 
-.background-text {
-  margin-top: 14rem;
-  max-width: 600px;
-  margin-right: 300px;
-
-  p {
-    margin-top: 13rem;
-    font-family: "Lato";
-    text-align: justify;
-    font-size: 2.5rem;
-  }
-}
-
 .gif {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  max-height: 100vh;
+  height: 100vh;
 
   img {
     width: 40vw;
-    max-height: 100vh;
+    height: 100%;
     background-position: center center;
     background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 1580px) {
+    img {
+      width: 100%;
+    }
   }
 }
 
 .hero-background {
   display: flex;
-  height: 100vh;
   flex-direction: column;
+  padding: 40px;
+
+  div {
+    max-width: 600px;
+  }
+
+  .background-text {
+    margin-top: 14rem;
+
+    p {
+      margin-top: 13rem;
+      font-family: "Lato";
+      text-align: justify;
+      font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 700px) {
+      margin-top: 1rem;
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    p {
+      font-size: 2rem !important;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    p {
+      font-size: 1.5rem !important;
+    }
+  }
 }
 
 .container {
@@ -85,8 +134,11 @@
   justify-content: space-between;
 
   & > div {
-    width: 50%;
-    height: 100vh;
+    flex: 0.5;
+  }
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
   }
 }
 

@@ -107,10 +107,11 @@ export default function Skills() {
             </h3>
             {showFront ? (
               <div className="text shadow">
+                <p>ReactJS</p>
                 <p>HTML</p>
                 <p>CSS</p>
                 <p>JavaScript</p>
-                <p>ReactJS</p>
+
                 <p>SASS</p>
                 <p>CMS</p>
                 <p>JQuery</p>
